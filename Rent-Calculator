@@ -1,0 +1,14 @@
+# Rent-Calculator #
+
+Rent = int(input("Enter House rent = "))
+Food = int(input("Enter the amount spent on  food  ="))
+Units_consumed = int(input("Enter the units consumed ="))
+Cost_per_unit = int(input("Enter the cost per unit ="))
+Water_Bill = int(input("Enter the water bill ="))
+Persons = int(input("Enter the number of persons living in room ="))
+
+Total_Electricity = Units_consumed * Cost_per_unit
+
+Total_Rent = (Food + Rent + Water_Bill + Total_Electricity)  // Persons
+
+print("Each person need to pay=",Total_Rent)
